@@ -1,0 +1,10 @@
+.ping_section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 50px 120px;
+}
+.ping img{
+    width: 50%;
+}

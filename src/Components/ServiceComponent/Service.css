@@ -1,0 +1,188 @@
+.service{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.heading{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.heading h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.heading .buttons button{
+    margin: 10px 20px;
+    color: black;
+    background-color: transparent;
+    padding: 10px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    transition: all .3s linear;
+}
+.heading .buttons button:hover{
+    color: white;
+    background-color: black;
+}
+.main_service{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px gray;
+   margin-top: 15px;
+   width: 320px;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   position: relative;
+
+}
+.main_service img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 250px;
+    width: 320px;
+ display: block;
+}
+.main_service .card{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ 
+    
+}
+.main_service .card:hover{
+    cursor: pointer;
+}
+.main_service .card h1{
+
+    margin: 10px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.main_service .card h4{
+    margin: 20px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+.main_service .card  .text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    flex-direction: column;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.6 );
+    transition: all .3s linear;
+    text-decoration: none;
+   
+}
+.main_service .card  .text:hover{
+    opacity: 1;
+  
+   
+}
+.main_service .card  .text a{
+   
+    color: white;
+}
+.main_service .card  .text > *{
+    transform: translateY(20px);
+    transition: all .3s;
+}
+.main_service .card  .text:hover > *{
+    transform: translateY(0px);
+   
+}
+
+
+@media (max-width:1200px) {
+    .service{
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 100px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width:900px) {
+    .service{
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        text-align: center;
+    }
+    .main_service{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 1px 2px 5px gray;
+       margin-top: 15px;
+       width: 250px;
+       border-top-right-radius: 10px;
+       border-top-left-radius: 10px;
+       position: relative;
+    
+    }
+    .main_service img{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 250px;
+        width: 250px;
+     display: block;
+    }
+}
+
+@media (max-width:768px) {
+    .service{
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        text-align: center;
+    }
+
+}
+@media (max-width:500px) {
+    .service{
+        /* margin-left: 20px; */
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        text-align: center;
+    }
+
+}
